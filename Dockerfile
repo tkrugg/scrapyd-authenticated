@@ -24,6 +24,7 @@ RUN pip3 install git+https://github.com/necrophcodr/chaperone.git \
  && mkdir /etc/chaperone.d
 
 # install Scrapyd and dependencies
+RUN pip3 install -U pip
 ADD requirements.txt /
 RUN pip3 install -r /requirements.txt \
  && pip3 freeze > /pip3-freeze.txt
