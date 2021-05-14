@@ -6,7 +6,7 @@ FROM ubuntu:18.04
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -qq \
  && apt-get install --no-install-recommends -y \
-    git \
+    vim curl wget git \
     # python3 support
     python3 python3-pip python3-setuptools \
     # scrapy dependencies
