@@ -1,6 +1,6 @@
 # Scrapyd web service (with authentication)
 
-FROM ubuntu:18.04
+FROM ubuntu:21.04
 
 # install Ubuntu packages
 ENV DEBIAN_FRONTEND noninteractive
